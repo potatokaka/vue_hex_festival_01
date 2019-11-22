@@ -1,0 +1,36 @@
+.lineupCard {
+  background-color: transparent;
+
+  &:hover {
+    background-color: transparent;
+    color: #7673bf;
+  }
+
+  .card-footer {
+    padding: 0.75rem 0;
+  }
+}
+.lineupCard__title {
+  font-size: 18px;
+  color: $primary;
+}
+
+.lineupModal {
+  background-color: rgba($primary, 0.5);
+  color: $primary;
+
+  .modal-title {
+    letter-spacing: 2px;
+  }
+  .modal-header {
+    border: none;
+  }
+
+  p {
+    line-height: 1.8em;
+  }
+}
+
+.sticky-top {
+  z-index: 10;
+}
