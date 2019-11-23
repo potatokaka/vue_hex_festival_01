@@ -12,6 +12,7 @@
           <div class="image-wrapper" id="third"></div>
           <div class="image-wrapper" id="forth"></div>
           <div class="image-wrapper" id="fifth"></div>
+          <div class="blur"></div>
         </div>
         
         <div class="content">

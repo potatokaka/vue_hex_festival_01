@@ -4,9 +4,12 @@
 
     <!-- .nav-open 打開漢堡 -->
     <nav id="siteNav" class="nav mt-md-4 mt-sm-2" :class="{'nav-open' : hamburgerOpen}">
-      <a class="logo mx-auto" href="/"> 
+      <!-- <a class="logo mx-auto" href="/"> 
         <img src="@/assets/images/logo_nomads_01.svg" />
-      </a>
+      </a> -->
+      <router-link to='/' class="logo mx-auto" :class="{'nav-open' : hamburgerOpen}">
+        <img src="@/assets/images/logo_nomads_01.svg" class="logo-main" />
+      </router-link>
       <div class="nav-toggle" @click="hamburgerToggle">
         <span class="nav-toggle__picto">
           <i class="fa fa-bars" v-if="!hamburgerOpen"></i>
@@ -23,19 +26,28 @@
           </router-link>
         </li>
         <li class="nav__item">
-          <router-link to='/' class="nav__link">
+          <!-- <router-link to='/' class="nav__link">
             EXPERIENCES
-          </router-link>
+          </router-link> -->
+          <div to='/' class="nav__link">
+            EXPERIENCES
+          </div>
         </li>
         <li class="nav__item">
-        <router-link to='/' class="nav__link">
-          ABOUT
-          </router-link>
+          <!-- <router-link to='/' class="nav__link">
+            ABOUT
+          </router-link> -->
+          <div to='/' class="nav__link">
+            ABOUT
+          </div>
         </li>
         <li class="nav__item">
-          <router-link to='/' class="nav__link">
+          <!-- <router-link to='/' class="nav__link">
             INFO & TRAVEL
-          </router-link>
+          </router-link> -->
+          <div to='/' class="nav__link">
+            INFO & TRAVEL
+          </div>
         </li>
 
       </ul>
@@ -44,7 +56,7 @@
       <!-- cart----------------------------------- -->
       <div class="dropdown cart ">
         <div class="cart-toggle d-flex align-items-center" data-toggle="dropdown" data-flip="false">
-          <span class="cart-toggle__label mr-1">Cart</span>
+          <span class="cart-toggle__label mr-2">Cart</span>
           <span class="cart-toggle__count" v-if="cart.carts.length > 0">
             <div class="circle">
               {{cart.carts.length}}

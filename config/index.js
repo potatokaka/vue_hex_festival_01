@@ -10,6 +10,7 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/vue_hex_festival_01/', //是否是根目錄？
+    //assetsPublicPath: '/download/vue_hex_festival_01/', //是否是根目錄？
     proxyTable: {},
 
     // Various Dev Server settings
@@ -44,6 +45,7 @@ module.exports = {
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',
     assetsPublicPath: '/vue_hex_festival_01/',
+    //assetsPublicPath: '/download/vue_hex_festival_01/', //是否是根目錄？
 
     /**
      * Source Maps

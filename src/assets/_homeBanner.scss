@@ -23,6 +23,7 @@
   color: #f7ffec;
   font-family: 'Montserrat', sans-serif;
   font-size: 80px;
+  z-index: 10;
 
   @include pad() {
     font-size: 60px;
@@ -39,13 +40,17 @@
     line-height: 50px;
     text-align: center;
   } 
-
 }
-@include pad() {
-  .container headline__wrapper {
-    margin-top: 50px;
-  }
-} 
+
+.ticket__headline {
+  margin-top: 60px;
+
+  @include pad() {
+    .container headline__wrapper {
+      margin-top: 50px;
+    }
+  } 
+}
 
 
 .images{
@@ -90,12 +95,10 @@
   }
 }
 
-
 .content {
   /* height: 100%; */
   width: 100%;
   // height: 90vh;
-  height: 100%;
   background-color: #dae7e8;
   z-index: 0;
   /* top: 100%; */
@@ -104,10 +107,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 350px;
-  padding-bottom: 150px;
+  // padding-top: 350px;
+  padding-top: 150px;
+  // padding-bottom: 150px;
+  padding-bottom: 0px;
+  box-sizing: border-box;
+
   @include pad() {
-    padding-bottom: 250px;
+    // padding-bottom: 250px;
   }
 }
 
@@ -144,6 +151,11 @@
   width: 230px;
   text-align: center;
   position: relative;
+  transition: all 0.3s;
+
+  &:hover {
+    transform: translateY(-10px);
+  }
 }
 
 .content-image-wrapper img{
@@ -156,6 +168,20 @@
     max-width: 90%;
     width: 90%;
   }
+}
+
+.blur {
+  // width: 120%;
+  width: 100%;
+  // margin-left: -10%;
+  height: 250px;
+  background-color: #d9e7e8;
+  position: absolute;
+  // bottom: -180px;
+  bottom: -150px;
+  // filter: blur(40px);
+  // z-index: 999;
+    
 }
 
 .one {
@@ -194,5 +220,5 @@
   @include pad() {
     width: 90%;
   }
-
 }
+
