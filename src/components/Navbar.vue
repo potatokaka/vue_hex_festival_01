@@ -35,20 +35,18 @@
         </li>
         <li class="nav__item">
           <!-- <router-link to='/' class="nav__link">
-            ABOUT
+            INFO & TRAVEL
           </router-link> -->
           <div to='/' class="nav__link">
-            ABOUT
+            INFO & TRAVEL
           </div>
         </li>
         <li class="nav__item">
-          <!-- <router-link to='/' class="nav__link">
-            INFO & TRAVEL
-          </router-link> -->
-          <div to='/' class="nav__link">
-            INFO & TRAVEL
-          </div>
+          <router-link to='/login' class="nav__link">
+            LOGIN
+          </router-link>
         </li>
+        
 
       </ul>
 
